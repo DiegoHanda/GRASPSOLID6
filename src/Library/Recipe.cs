@@ -56,10 +56,9 @@ namespace Full_GRASP_And_SOLID
                 result = result + step.GetTextToPrint() + "\n";
                 time += step.Time; //Se aprovecha que recorre paso a paso y se obtiene el tiempo de cada paso
             }
-            string sTime = GetCookTime().ToString();
 
             // Agregado por Expert
-            result = result + $"Costo de producción: {this.GetProductionCost()} \nTiempo: {sTime}";
+            result = result + $"Costo de producción: {this.GetProductionCost()} \nTiempo: {time}";
 
             return result;
         }
