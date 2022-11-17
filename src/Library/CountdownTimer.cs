@@ -3,11 +3,6 @@ using System.Threading;
 
 namespace Full_GRASP_And_SOLID
 {
-    public interface TimerClient
-    {
-        void TimeOut();
-    }
-
     public class CountdownTimer
     {
         private TimerClient client;
